@@ -33,4 +33,10 @@
     })(document);
   </script>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top/style.css">
+  <?php if (is_single()) : ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/blog/style.css">
+  <?php endif; ?>
+  <?php if (is_page()) : ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/<?php echo $post->post_name; ?>/style.css">
+  <?php endif; ?>
   <title>title</title>

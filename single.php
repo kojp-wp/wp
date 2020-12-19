@@ -63,7 +63,7 @@ $next_post = get_next_post();
     get_footer();
     ?>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/top/script.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/blog/script.js"></script>
 </body>
 
 </html>
