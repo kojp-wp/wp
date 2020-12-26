@@ -51,13 +51,13 @@ get_template_part("article-summry");
       </div>
       <ul class="sns-button">
         <li class="sns-button__item">
-          <a><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="Twitter"></a>
+          <a><img src="/img/twitter.svg" alt="Twitter"></a>
         </li>
         <li class="sns-button__item">
-          <a><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-f.svg" alt="Facebookページ"></a>
+          <a><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
         </li>
         <li class="sns-button__item">
-          <a><img src="<?php echo get_template_directory_uri(); ?>/img/line.svg" alt="LINE@"></a>
+          <a><img src="/img/line.svg" alt="LINE@"></a>
         </li>
       </ul>
       <div class="about-detail about-detail--fit-right">
@@ -83,26 +83,26 @@ get_template_part("article-summry");
       <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT">Client / 顧客</h2>
       <ul class="client-list">
         <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
+              src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://corp.en-japan.com/" target="_blank"
-            class="client-list__link"><img src="<?php echo get_template_directory_uri(); ?>/img/client-logo/enjapan.png" alt="エン・ジャパン株式会社"
+            class="client-list__link"><img src="/img/client-logo/enjapan.png" alt="エン・ジャパン株式会社"
               class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://www.kayac.com/" target="_blank" class="client-list__link"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/client-logo/kayac.png" alt="面白法人カヤック" class="client-list__image"></a></li>
+              src="/img/client-logo/kayac.png" alt="面白法人カヤック" class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://www.cbase.co.jp/" target="_blank" class="client-list__link"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/client-logo/CBASE.png" alt="株式会社シーベース" class="client-list__image"></a></li>
+              src="/img/client-logo/CBASE.png" alt="株式会社シーベース" class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://www.staffservice.co.jp/" target="_blank"
-            class="client-list__link"><img src="<?php echo get_template_directory_uri(); ?>/img/client-logo/STAFFSERVICE.png" alt="株式会社スタッフサービス・ホールディングス"
+            class="client-list__link"><img src="/img/client-logo/STAFFSERVICE.png" alt="株式会社スタッフサービス・ホールディングス"
               class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://zeku.co.jp/" target="_blank" class="client-list__link"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/client-logo/ZEKU.png" alt="株式会社ゼクウ" class="client-list__image"></a></li>
+              src="/img/client-logo/ZEKU.png" alt="株式会社ゼクウ" class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://corp.chatwork.com/ja/" target="_blank"
-            class="client-list__link"><img src="<?php echo get_template_directory_uri(); ?>/img/client-logo/Chatwork.png" alt="Chatwork株式会社"
+            class="client-list__link"><img src="/img/client-logo/Chatwork.png" alt="Chatwork株式会社"
               class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://visits.world/" target="_blank" class="client-list__link"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/client-logo/VISITS.png" alt="VISITS Technologies株式会社" class="client-list__image"></a></li>
+              src="/img/client-logo/VISITS.png" alt="VISITS Technologies株式会社" class="client-list__image"></a></li>
         <li class="client-list__item"><a href="https://recruit-holdings.co.jp/" target="_blank"
-            class="client-list__link"><img src="<?php echo get_template_directory_uri(); ?>/img/client-logo/RECRUIT.png" alt="株式会社リクルートホールディングス"
+            class="client-list__link"><img src="/img/client-logo/RECRUIT.png" alt="株式会社リクルートホールディングス"
               class="client-list__image"></a></li>
       </ul>
       <p class="common-notice-right">※五十音順、一部のみ掲載</p>
@@ -110,7 +110,7 @@ get_template_part("article-summry");
       <h2 class="common-heading2 top-heading2">代表プロフィール</h2>
       <div class="chief-profile">
         <figure class="common-wide-image common-wide-image--high chief-profile__chief-photo">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/image-chief-profile.png" alt="ウチヤマケンイチ プロフィール写真">
+          <img src="/img/image-chief-profile.png" alt="ウチヤマケンイチ プロフィール写真">
         </figure>
         <div class="chief-profile__name-wrapper">
           <p class="chief-profile__name">ウチヤマ ケンイチ</p>
@@ -138,13 +138,13 @@ get_template_part("article-summry");
           </dl>
           <ul class="sns-button chief-profile__sns-button">
             <li class="sns-button__item">
-              <a><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="Twitter"></a>
+              <a><img src="/img/twitter.svg" alt="Twitter"></a>
             </li>
             <li class="sns-button__item">
-              <a><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-f.svg" alt="Facebookページ"></a>
+              <a><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
             </li>
             <li class="sns-button__item">
-              <a><img src="<?php echo get_template_directory_uri(); ?>/img/line.svg" alt="LINE@"></a>
+              <a><img src="/img/line.svg" alt="LINE@"></a>
             </li>
           </ul>
         </div>
@@ -231,7 +231,7 @@ get_template_part("article-summry");
 
         <h3 class="common-heading2 top-heading2 top-heading2--logo-explanation">ロゴに込めた想い</h3>
         <div class="logo-explanation__wrapper">
-          <p class="logo-explanation"><img class="logo-explanation__image" src="<?php echo get_template_directory_uri(); ?>/img/logo/knickaoffice_symbol.svg"
+          <p class="logo-explanation"><img class="logo-explanation__image" src="/img/logo/knickaoffice_symbol.svg"
               alt="ニッカオフィスロゴ"></p>
           <div class="logo-explanation__text">
             <p>ニッカオフィスのロゴは、「人」と「鍵穴」の形をモチーフにしています。</p>
@@ -244,7 +244,7 @@ get_template_part("article-summry");
 get_footer();
 ?>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/top/script.js"></script>
+  <script src="/js/top/script.js"></script>
 </body>
 
 </html>

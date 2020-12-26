@@ -1,6 +1,6 @@
 <header class="global-header">
   <h1 class="global-logo">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-knicka-wide.png" alt="knicka office" />
+    <img src="/img/logo-knicka-wide.png" alt="knicka office" />
   </h1>
   <nav class="global-nav">
     <button class="global-nav__toggle-button">

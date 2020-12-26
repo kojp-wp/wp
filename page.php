@@ -19,8 +19,8 @@
     get_footer();
     ?>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/top/script.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/<?php echo $post->post_name; ?>/script.js"></script>
+  <script src="/js/top/script.js"></script>
+  <script src="/js/<?php echo $post->post_name; ?>/script.js"></script>
 </body>
 
 </html>

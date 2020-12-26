@@ -40,7 +40,7 @@ $next_post = get_next_post();
           </div>
         </div>
         <div class="blog-main__card">
-          <img class="blog-main__card" src="<?php echo get_template_directory_uri(); ?>/img/blog/blog-one-point.png" alt="blog-one-point">
+          <img class="blog-main__card" src="/img/blog/blog-one-point.png" alt="blog-one-point">
         </div>
       </article>
 
@@ -63,7 +63,7 @@ $next_post = get_next_post();
     get_footer();
     ?>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/blog/script.js"></script>
+  <script src="/js/blog/script.js"></script>
 </body>
 
 </html>
