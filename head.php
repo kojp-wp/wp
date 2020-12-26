@@ -2,6 +2,7 @@
   <meta http-equiv="X-Uh-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <?php get_template_part("meta-info"); ?>
   <script>
     (function(d) {
       var config = {
@@ -39,4 +40,3 @@
   <?php if (is_page()) : ?>
   <link rel="stylesheet" href="/css/<?php echo $post->post_name; ?>/style.css">
   <?php endif; ?>
-  <title>title</title>
