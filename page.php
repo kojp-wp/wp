@@ -17,7 +17,6 @@
   <?php
   get_footer();
   ?>
-  <script src="/js/top/script.js"></script>
   <script src="/js/<?php echo $post->post_name; ?>/script.js"></script>
 </body>
 
