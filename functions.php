@@ -1,0 +1,47 @@
+<?php
+function imdir( $file_name = NULL )
+{
+    if( $file_name ){
+        $url = esc_url( get_template_directory_uri().'/assets/img/'.slug().'/'.$file_name );
+        $path = get_template_directory().'/assets/img/'.slug().'/'.$file_name;
+
+        return $url.'?v='.date( "YmdHis", filemtime( $path ));
+    }
+    else{
+        return esc_url( get_template_directory_uri().'/assets/img' );
+    }
+}
+
+function custom_date()
+{
+    $date = get_the_time('Ymd');
+    $y    = get_the_time('Y');
+    $m    = get_the_time('n');
+    $d    = get_the_time('j');
+    //昭和
+    if ($date < 19890108) {
+        if ($y == 1926) {
+            echo "昭和元年";
+        } else {
+            echo "昭和" . ($y - 1925) . "年";
+        }
+    }
+    //平成
+    elseif ($date < 20190501) {
+        if ($y == 1989) {
+            echo "平成元年";
+        } else {
+            echo "平成" . ($y - 1988) . "年";
+        }
+    }
+    //令和
+    else {
+        if ($y == 2019) {
+            echo "令和元年";
+        } else {
+            echo "令和" . ($y - 2018) . "年";
+        }
+    }
+    echo $m . "月" . $d . "日";
+}
+?>

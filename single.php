@@ -1,6 +1,7 @@
 <?php
 $previous_post = get_previous_post();
 $next_post = get_next_post();
+$page_title = get_the_title() . custom_date();
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -29,10 +30,10 @@ $next_post = get_next_post();
           </a>
         <?php endif; ?>
       </div>
-      <h2><?php the_title(); ?></h2>
+      <h2><?php echo $page_title; ?></h2>
       <div class="blog-main__content-height">
         <div class="blog-main__content">
-          <h3 class="blog-main__content-right">//ここはリードが入ります。//</h3>
+          <?php /*<h3 class="blog-main__content-right">//ここはリードが入ります。//</h3>*/ ?>
           <div class="blog-main__content-left">
             <?php echo get_the_content(); ?>
           </div>

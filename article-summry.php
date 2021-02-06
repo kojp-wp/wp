@@ -17,9 +17,9 @@ if (count($recent_post) > 0) {
     <h2 class="quate-blog-content__title">
       <?php echo $recent_post_title ?>
     </h2>
-    <p class="quate-blog-content__sub-title">
+    <?php /*<p class="quate-blog-content__sub-title">
       //ここはリードが入ります。//
-    </p>
+    </p>*/ ?>
     <p class="quate-blog-content__text">
       <?php echo $recent_post_content ?>
     </p>
