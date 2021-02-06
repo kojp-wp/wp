@@ -23,6 +23,6 @@ if (count($recent_post) > 0) {
     <p class="quate-blog-content__text">
       <?php echo $recent_post_content ?>
     </p>
-    <a href="<?php echo $recent_post_url ?>" class="quate-blog-content__more"><span>つづきを読む</span></a>
+    <p class="quate-blog-content__more"><a href="<?php echo $recent_post_url ?>">つづきを読む</a></p>
   </article>
 </article>

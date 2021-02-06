@@ -14,8 +14,8 @@ get_header();
 ?>
     <main class="main-content-wrapper">
       <div class="top-statement">
-        <p class="top-statement__title">ぜんぶ、<br>使いやすくする</p>
-        <p class="top-statement__text">ニッカオフィスは、世の中のモノやコトを<br>使いやすくする<br>デザインスタジオです</p>
+        <p class="top-statement__title">ぜんぶ、<br>使いやすくしよう</p>
+        <p class="top-statement__text">ニッカオフィスは、世の中のモノやコトを<br>使いやすくする<br>クリエイティブスタジオです</p>
       </div>
 
       <nav class="top-page-nav">
@@ -46,8 +46,7 @@ get_template_part("article-summry");
 
       <h2 class="common-heading2 top-heading2" id="TOP_HEADING_ABOUT">About / オフィスのこと</h2>
       <div class="global-narrow-box">
-        <p>ニッカオフィスは、これまで50案件以上のサービス立ち上げやリニュアルを担当した知見を元に、あらゆるコトやモノを使いやすくデザインします。</p>
-        <p>また制作以外にも、既存チームに入り込んで一緒にプロジェクトを進め、デザイン人材の育成や構築も行います。</p>
+        <p>ニッカオフィスは、これまでに50案件以上のサービス立ち上げやリニュアルを行った代表のウチヤマケンイチの経験を元に、どんなプロダクトやサービスも使いやすくデザインします。</p>
       </div>
       <ul class="sns-button">
         <li class="sns-button__item">
@@ -80,7 +79,7 @@ get_template_part("article-summry");
         </div>
       </div>
 
-      <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT">Client / 顧客</h2>
+      <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT">Client / お客様</h2>
       <ul class="client-list">
         <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img
               src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
@@ -107,7 +106,7 @@ get_template_part("article-summry");
       </ul>
       <p class="common-notice-right">※五十音順、一部のみ掲載</p>
 
-      <h2 class="common-heading2 top-heading2">代表プロフィール</h2>
+      <h2 class="common-heading2 top-heading2" id="chief-profile">代表プロフィール</h2>
       <div class="chief-profile">
         <figure class="common-wide-image common-wide-image--high chief-profile__chief-photo">
           <img src="/img/image-chief-profile.png" alt="ウチヤマケンイチ プロフィール写真">
@@ -130,11 +129,10 @@ get_template_part("article-summry");
           <dl class="chief-profile__expert">
             <dt>専門分野</dt>
             <dd>UXデザイン</dd>
-            <dd>インフォメーションアーキテクト</dd>
-            <dd>人材育成</dd>
+            <dd>インフォメーションアーキテクチャ</dd>
             <dd>問題特定・解決</dd>
-            <dd>ロジカルシンキング</dd>
             <dd>プロジェクトマネジメント</dd>
+            <dd>人材育成</dd>
           </dl>
           <ul class="sns-button chief-profile__sns-button">
             <li class="sns-button__item">
@@ -187,11 +185,11 @@ get_template_part("article-summry");
             <dt>代表社員</dt>
             <dd>内山 賢一　Kenichi UCHIYAMA</dd>
             <dt>従業員数</dt>
-            <dd>１名（2020年３月末現在）</dd>
+            <dd>１名（2020年12月末現在）</dd>
             <dt>資本金</dt>
-            <dd>100万円（2020年３月末現在）</dd>
+            <dd>100万円（2020年12月末現在）</dd>
             <dt>所在地</dt>
-            <dd>220-0051 神奈川県横浜市西区中央2-3-13 ニッカオフィスビル４F</dd>
+            <dd>220-0051 神奈川県横浜市西区中央2-3-13 ニッカオフィスビル</dd>
             <dt>設立</dt>
             <dd>2017年1月4日</dd>
             <dt>事業内容</dt>
@@ -213,7 +211,7 @@ get_template_part("article-summry");
                 <dt>2010年</dt>
                 <dd>西前銀座商店会（横浜市西区）内にオフィスを移転</dd>
                 <dt>2011年</dt>
-                <dd>ニッカオフィス / knicka office に事業名を変更し、個人事業として正式に事業化</dd>
+                <dd>「ニッカオフィス」に屋号を変更し、個人事業主として事業開始</dd>
                 <dt>2017年</dt>
                 <dd>「ニッカオフィス合同会社」として法人化</dd>
               </dl>

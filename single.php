@@ -20,12 +20,12 @@ $next_post = get_next_post();
       <div class="blog-header-nav">
         <?php if (!empty($previous_post)) : ?>
           <a href="<?php echo get_permalink($previous_post->ID); ?>" class="blog-header-nav__day-before">
-            <p>前日</p>
+            <span>前日</span>
           </a>
         <?php endif; ?>
         <?php if (!empty($next_post)) : ?>
           <a href="<?php echo get_permalink($next_post->ID); ?>" class="blog-header-nav__day-after">
-            <p>翌日</p>
+            <span>翌日</span>
           </a>
         <?php endif; ?>
       </div>
@@ -46,14 +46,14 @@ $next_post = get_next_post();
     <div class="blog-footer-nav">
       <?php if (!empty($previous_post)) : ?>
         <a href="<?php echo get_permalink($previous_post->ID); ?>" class="blog-footer-nav__day-before">
-          <p class="blog-footer-nav__day-before-zenjitsu">前日</p>
-          <p class="blog-footer-nav__day-before-title"><?php echo $previous_post->post_title; ?></p>
+          <span class="blog-footer-nav__day-before-zenjitsu">前日</span>
+          <span class="blog-footer-nav__day-before-title"><?php echo $previous_post->post_title; ?></span>
         </a>
       <?php endif; ?>
       <?php if (!empty($next_post)) : ?>
-        <a href="<?php echo get_permalink($next_post->ID); ?>" class="blog-footer-nav__day-before">
-          <p class="blog-footer-nav__day-before-title"><?php echo $next_post->post_title; ?></p>
-          <p class="blog-footer-nav__day-before-zenjitsu">翌日</p>
+        <a href="<?php echo get_permalink($next_post->ID); ?>" class="blog-footer-nav__day-after">
+          <span class="blog-footer-nav__day-after-title"><?php echo $next_post->post_title; ?></span>
+          <span class="blog-footer-nav__day-after-yokujitsu">翌日</span>
         </a>
       <?php endif; ?>
     </div>
