@@ -15,10 +15,10 @@ function imdir( $file_name = NULL )
 function format_thoughts_title( $_YYmd )
 {
     $dates = explode(',', $_YYmd);
-    $y    = $dates[0];
-    $m    = $dates[1];
+    $y    = (int) $dates[0];
+    $m    = (int) $dates[1];
     $mm    = sprintf('%02d', $m);
-    $d    = $dates[2];
+    $d    = (int) $dates[2];
     $dd    = sprintf('%02d', $d);
     $date = $y . $mm . $dd;
     //昭和

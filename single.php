@@ -53,12 +53,12 @@ $is_previous_post_displayed =
         <?php if (!empty($previous_post) && $is_previous_post_displayed) : ?>
           <a href="<?php echo get_permalink($previous_post->ID); ?>" class="blog-footer-nav__day-before">
             <span class="blog-footer-nav__day-before-zenjitsu">前日</span>
-            <span class="blog-footer-nav__day-before-title"><?php echo $previous_post->post_title; ?></span>
+            <span class="blog-footer-nav__day-before-title"><?php echo format_title($previous_post->post_title); ?></span>
           </a>
         <?php endif; ?>
         <?php if (!empty($next_post)) : ?>
           <a href="<?php echo get_permalink($next_post->ID); ?>" class="blog-footer-nav__day-after">
-            <span class="blog-footer-nav__day-after-title"><?php echo $next_post->post_title; ?></span>
+            <span class="blog-footer-nav__day-after-title"><?php echo format_title($next_post->post_title); ?></span>
             <span class="blog-footer-nav__day-after-yokujitsu">翌日</span>
           </a>
         <?php endif; ?>
