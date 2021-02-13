@@ -35,7 +35,7 @@ $is_previous_post_displayed =
             </a>
           <?php endif; ?>
         </div>
-        <h2><?php echo post_custom('サブタイトル'); ?></h2>
+        <h2><?php echo format_thoughts_title(post_custom('sub_title')); ?></h2>
         <div class="blog-main__content-height">
           <div class="blog-main__content">
             <h3 class="blog-main__content-right"><?php echo $page_title; ?></h3>
