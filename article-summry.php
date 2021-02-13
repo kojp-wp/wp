@@ -19,7 +19,7 @@ if (count($recent_post) > 0) {
       <?php echo format_thoughts_title($recent_post_thoughts) ?>
     </h2>
     <p class="quate-blog-content__sub-title">
-      <?php echo $recent_post_title ?>
+      <?php echo format_title($recent_post_title) ?>
     </p>
     <p class="quate-blog-content__text">
       <?php echo $recent_post_content ?>

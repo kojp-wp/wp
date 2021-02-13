@@ -38,7 +38,7 @@ $is_previous_post_displayed =
         <h2><?php echo format_thoughts_title(post_custom('sub_title')); ?></h2>
         <div class="blog-main__content-height">
           <div class="blog-main__content">
-            <h3 class="blog-main__content-right"><?php echo $page_title; ?></h3>
+            <h3 class="blog-main__content-right"><?php echo format_title($page_title); ?></h3>
             <div class="blog-main__content-left">
               <?php echo get_the_content(); ?>
             </div>

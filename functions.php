@@ -47,4 +47,12 @@ function format_thoughts_title( $_YYmd )
     }
     echo $m . '月' . $d . '日' . 'に考えたこと';
 }
+
+function format_title( $_title )
+{
+    $titles = explode('｜', $_title);
+    $main    = $titles[0];
+    $sub    = $titles[1];
+    echo $main;
+}
 ?>
