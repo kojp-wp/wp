@@ -67,9 +67,14 @@ function set_slug_date()
 ?>
     <script>
         jQuery(function($) {
-            $('#post_name').val("<?php echo date_i18n('Ymd'); ?>");
+            window.addEventListener('load', function() {
+                var $slugInput = $('#inspector-text-control-0');
+                if ($slugInput) {
+                    $slugInput.val("<?php echo date_i18n('Ymd'); ?>");
+                }
+            });
         });
     </script>
 <?php }
-add_action('admin_head-post-new.php', 'set_slug_date');
+add_action('admin_head-post.php', 'set_slug_date');
 ?>
