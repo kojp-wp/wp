@@ -1,18 +1,17 @@
 <?php
-function imdir( $file_name = NULL )
+function imdir($file_name = NULL)
 {
-    if( $file_name ){
-        $url = esc_url( get_template_directory_uri().'/assets/img/'.slug().'/'.$file_name );
-        $path = get_template_directory().'/assets/img/'.slug().'/'.$file_name;
+    if ($file_name) {
+        $url = esc_url(get_template_directory_uri() . '/assets/img/' . slug() . '/' . $file_name);
+        $path = get_template_directory() . '/assets/img/' . slug() . '/' . $file_name;
 
-        return $url.'?v='.date( "YmdHis", filemtime( $path ));
-    }
-    else{
-        return esc_url( get_template_directory_uri().'/assets/img' );
+        return $url . '?v=' . date("YmdHis", filemtime($path));
+    } else {
+        return esc_url(get_template_directory_uri() . '/assets/img');
     }
 }
 
-function format_thoughts_title( $_YYmd )
+function format_thoughts_title($_YYmd)
 {
     $dates = explode(',', $_YYmd);
     $y    = (int) $dates[0];
@@ -48,11 +47,29 @@ function format_thoughts_title( $_YYmd )
     echo $m . '月' . $d . '日' . 'に考えたこと';
 }
 
-function format_title( $_title )
+function format_title($_title)
 {
     $titles = explode('｜', $_title);
     $main    = $titles[0];
     $sub    = $titles[1];
     echo $main;
 }
+
+/**
+ * 投稿のスラッグの初期値を日付(YYYYMMDD形式)にします。
+ */
+function set_slug_date()
+{
+    // 投稿以外(固定ページなど)の場合は適用しない
+    if ('post' != get_post_type()) {
+        return;
+    }
+?>
+    <script>
+        jQuery(function($) {
+            $('#post_name').val("<?php echo date_i18n('Ymd'); ?>");
+        });
+    </script>
+<?php }
+add_action('admin_head-post-new.php', 'set_slug_date');
 ?>
