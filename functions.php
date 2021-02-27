@@ -77,4 +77,38 @@ function set_slug_date()
     </script>
 <?php }
 add_action('admin_head-post.php', 'set_slug_date');
+
+/* 投稿一覧にスラッグを追加 */
+function add_post_column_title($columns)
+{
+    $columns['slug'] = "スラッグ";
+    echo '<style>.fixed .column-slug {width:8%;}</style>';
+    return $columns;
+}
+function add_post_column($column_name, $post_id)
+{
+    if ($column_name == 'slug') {
+        $post = get_post($post_id);
+        $slug = $post->post_name;
+        echo esc_attr($slug);
+    }
+}
+add_filter('manage_posts_columns', 'add_post_column_title');
+add_action('manage_posts_custom_column', 'add_post_column', 10, 2);
+
+/* 投稿一覧にサブタイトルを追加 */
+function add_posts_columns($columns)
+{
+    $columns['subtitle'] = 'サブタイトル';
+    return $columns;
+}
+function custom_posts_column($column_name, $post_id)
+{
+    if ($column_name == 'subtitle') {
+        $sub_title = get_post_meta($post_id, 'sub_title', true);
+        echo ($sub_title) ? $sub_title : '－';
+    }
+}
+add_filter('manage_posts_columns', 'add_posts_columns');
+add_action('manage_posts_custom_column', 'custom_posts_column', 10, 2);
 ?>
