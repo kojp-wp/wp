@@ -35,10 +35,10 @@ $is_previous_post_displayed =
             </a>
           <?php endif; ?>
         </div>
-        <h2><?php echo format_thoughts_title(post_custom('sub_title')); ?></h2>
+        <h2><?php echo which_thoughts_title(post_custom('sub_title'), format_thoughts_title(post_custom('sub_title')), format_title($page_title, 'sub')); ?></h2>
         <div class="blog-main__content-height">
           <div class="blog-main__content">
-            <h3 class="blog-main__content-right"><?php echo format_title($page_title); ?></h3>
+            <h3 class="blog-main__content-right"><?php echo format_title($page_title, 'main'); ?></h3>
             <div class="blog-main__content-left">
               <?php echo get_the_content(); ?>
             </div>
@@ -53,12 +53,12 @@ $is_previous_post_displayed =
         <?php if (!empty($previous_post) && $is_previous_post_displayed) : ?>
           <a href="<?php echo get_permalink($previous_post->ID); ?>" class="blog-footer-nav__day-before">
             <span class="blog-footer-nav__day-before-zenjitsu">前日</span>
-            <span class="blog-footer-nav__day-before-title"><?php echo format_title($previous_post->post_title); ?></span>
+            <span class="blog-footer-nav__day-before-title"><?php echo format_title($previous_post->post_title, 'main'); ?></span>
           </a>
         <?php endif; ?>
         <?php if (!empty($next_post)) : ?>
           <a href="<?php echo get_permalink($next_post->ID); ?>" class="blog-footer-nav__day-after">
-            <span class="blog-footer-nav__day-after-title"><?php echo format_title($next_post->post_title); ?></span>
+            <span class="blog-footer-nav__day-after-title"><?php echo format_title($next_post->post_title, 'main'); ?></span>
             <span class="blog-footer-nav__day-after-yokujitsu">翌日</span>
           </a>
         <?php endif; ?>

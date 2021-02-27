@@ -20,39 +20,54 @@ function format_thoughts_title($_YYmd)
     $d    = (int) $dates[2];
     $dd    = sprintf('%02d', $d);
     $date = $y . $mm . $dd;
+    $display_title = '';
     //昭和
     if ($date < 19890108) {
         if ($y == 1926) {
-            echo '昭和元年';
+            $display_title .= '昭和元年';
         } else {
-            echo '昭和' . ($y - 1925) . '年';
+            $display_title .= '昭和' . ($y - 1925) . '年';
         }
     }
     //平成
     elseif ($date < 20190501) {
         if ($y == 1989) {
-            echo '平成元年';
+            $display_title .= '平成元年';
         } else {
-            echo '平成' . ($y - 1988) . '年';
+            $display_title .= '平成' . ($y - 1988) . '年';
         }
     }
     //令和
     else {
         if ($y == 2019) {
-            echo '令和元年';
+            $display_title .= '令和元年';
         } else {
-            echo '令和' . ($y - 2018) . '年';
+            $display_title .= '令和' . ($y - 2018) . '年';
         }
     }
-    echo $m . '月' . $d . '日' . 'に考えたこと';
+    $display_title .= $m . '月' . $d . '日' . 'に考えたこと';
+    return $display_title;
 }
 
-function format_title($_title)
+function format_title( $_title, $_flag )
 {
     $titles = explode('｜', $_title);
     $main    = $titles[0];
     $sub    = $titles[1];
-    echo $main;
+    if ($_flag == 'main') {
+        return $main;
+    } elseif ($_flag == 'sub') {
+        return $sub;
+    }
+}
+
+function which_thoughts_title( $_has_data, $_thoughts_title, $_title )
+{
+    if ($_has_data) {
+        return $_thoughts_title;
+    } else {
+        return $_title;
+    }
 }
 
 /**
