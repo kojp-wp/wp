@@ -2,16 +2,16 @@
 <html lang="ja">
 
 <head>
-<?php
-get_template_part("head");
-?>
+  <?php
+  get_template_part("head");
+  ?>
 </head>
 
 <body>
   <div class="global-wrapper">
-<?php
-get_header();
-?>
+    <?php
+    get_header();
+    ?>
     <main class="main-content-wrapper">
       <div class="top-statement">
         <p class="top-statement__title">ぜんぶ、<br>使いやすくしよう</p>
@@ -19,13 +19,14 @@ get_header();
       </div>
 
       <nav class="top-page-nav">
-        <ul class="js-smoothTrigger top-page-nav__menu common-nav-list">
-          <li class="top-page-nav__item common-nav-list__item"><a
-              href="#TOP_HEADING_ABOUT"><span>About</span><span>オフィスのこと</span></a>
+        <ul class="js-smoothTrigger top-page-nav__menu circle-nav-list">
+          <li class="top-page-nav__item circle-nav-list__item">
+            <a href="#TOP_HEADING_ABOUT"><span>About</span><span>オフィスのこと</span></a>
           </li>
-          <li class="top-page-nav__item common-nav-list__item"><a
-              href="#TOP_HEADING_CLIENT"><span>Client</span><span>顧客</span></a></li>
-          <li class="top-page-nav__item common-nav-list__item"><a href="<?php
+          <li class="top-page-nav__item circle-nav-list__item">
+            <a href="#TOP_HEADING_CLIENT"><span>Client</span><span>実績</span></a>
+          </li>
+          <li class="top-page-nav__item circle-nav-list__item"><a href="<?php
           $recent_post = get_posts('numberposts=1');
           if (count($recent_post) > 0) {
             $recent_post_id = $recent_post[0]->ID;
@@ -33,16 +34,16 @@ get_header();
             echo $recent_post_url;
           } ?>"><span>Essay</span><span>エッセイ</span></a>
           </li>
-          <li class="top-page-nav__item common-nav-list__item"><a
-              href="/contact/"><span>Contact</span><span>お問い合わせ</span></a>
+          <li class="top-page-nav__item circle-nav-list__item">
+            <a href="/contact/"><span>Contact</span><span>お問い合わせ</span></a>
           </li>
         </ul>
       </nav>
 
 
-<?php
-get_template_part("article-summry");
-?>
+      <?php
+      get_template_part("article-summry");
+      ?>
 
       <h2 class="common-heading2 top-heading2" id="TOP_HEADING_ABOUT">About / オフィスのこと</h2>
       <div class="global-narrow-box">
@@ -59,17 +60,6 @@ get_template_part("article-summry");
           <a><img src="/img/line.svg" alt="LINE@"></a>
         </li>
       </ul>
-      <div class="about-detail about-detail--fit-right">
-        <button class="js-slide-toggle-button" data-slide-target="offer-plan">提供プランを詳しく見る</button>
-      </div>
-      <div class="common-border-box-light-gray top-offer-plan__wrapper" data-slide-content="offer-plan">
-        <ul class="top-offer-plan">
-          <li>クリエイティブ（グラフィックデザイン、ウェブデザイン、インテリアデザインほか）のコンサルティング、制作ほか</li>
-          <li>人材育成（デザイナー、プロデューサー、営業、経営幹部）のスキルセット定義とそれに伴う育成。貴社のチームと一緒にプロダクト検討やデザイン作成やデザインチームの構築や育成を行います。</li>
-          <li>クリエイティブ全般のコンサルティング・制作（グラフィック、ウェブ、インテリア・プロダクトほか）</li>
-          <li>人材のスキルセット定義とそれに伴う育成（デザイナー、プロデューサー、営業、経営幹部）</li>
-        </ul>
-      </div>
 
       <div class="common-fluid-image">
         <div class="common-fluid-image__parallax-wrapper">
@@ -79,30 +69,17 @@ get_template_part("article-summry");
         </div>
       </div>
 
-      <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT">Client / お客様</h2>
+      <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT">Client / 実績</h2>
       <ul class="client-list">
-        <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img
-              src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://corp.en-japan.com/" target="_blank"
-            class="client-list__link"><img src="/img/client-logo/enjapan.png" alt="エン・ジャパン株式会社"
-              class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://www.kayac.com/" target="_blank" class="client-list__link"><img
-              src="/img/client-logo/kayac.png" alt="面白法人カヤック" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://www.cbase.co.jp/" target="_blank" class="client-list__link"><img
-              src="/img/client-logo/CBASE.png" alt="株式会社シーベース" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://www.staffservice.co.jp/" target="_blank"
-            class="client-list__link"><img src="/img/client-logo/STAFFSERVICE.png" alt="株式会社スタッフサービス・ホールディングス"
-              class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://zeku.co.jp/" target="_blank" class="client-list__link"><img
-              src="/img/client-logo/ZEKU.png" alt="株式会社ゼクウ" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://corp.chatwork.com/ja/" target="_blank"
-            class="client-list__link"><img src="/img/client-logo/Chatwork.png" alt="Chatwork株式会社"
-              class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://visits.world/" target="_blank" class="client-list__link"><img
-              src="/img/client-logo/VISITS.png" alt="VISITS Technologies株式会社" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://recruit-holdings.co.jp/" target="_blank"
-            class="client-list__link"><img src="/img/client-logo/RECRUIT.png" alt="株式会社リクルートホールディングス"
-              class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://corp.en-japan.com/" target="_blank" class="client-list__link"><img src="/img/client-logo/enjapan.png" alt="エン・ジャパン株式会社" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.kayac.com/" target="_blank" class="client-list__link"><img src="/img/client-logo/kayac.png" alt="面白法人カヤック" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.cbase.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/CBASE.png" alt="株式会社シーベース" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.staffservice.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/STAFFSERVICEGROUP.png" alt="株式会社スタッフサービス・ホールディングス" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://zeku.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/ZEKU.png" alt="株式会社ゼクウ" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://corp.chatwork.com/ja/" target="_blank" class="client-list__link"><img src="/img/client-logo/Chatwork.png" alt="Chatwork株式会社" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://visits.world/" target="_blank" class="client-list__link"><img src="/img/client-logo/VISITS.png" alt="VISITS Technologies株式会社" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://recruit-holdings.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/RECRUIT.png" alt="株式会社リクルートホールディングス" class="client-list__image"></a></li>
       </ul>
       <p class="common-notice-right">※五十音順、一部のみ掲載</p>
 
@@ -146,37 +123,136 @@ get_template_part("article-summry");
             </li>
           </ul>
         </div>
-        <div class="about-detail about-detail--fit-left">
-          <button class="js-slide-toggle-button js-toggle-label chief-profile__toggle-button"
-            data-slide-target="profile-history" data-toggle-label-text="経歴詳細を閉じる">経歴詳細を開く</button>
-        </div>
-        <div class="chief-profile__history__wrapper global-narrow-box" data-slide-content="profile-history">
-          <dl class="chief-profile__history">
-            <dt>1981年</dt>
-            <dd>神奈川県横浜市生まれ</dd>
-            <dt>2001年</dt>
-            <dd>
-              <p>大学入学。建築学科にて建築、家具、インテリアを専攻。Charles & Ray Eamesのデザイン理論を研究。</p>
-            </dd>
-            <dt>2007年</dt>
-            <dd>
-              <ul>
-                <li>東京理科大学大学院建築学専攻修了</li>
-                <li>株式会社リクルート入社　不動産情報サイトSUUMOの新規立ち上げを担当</li>
-              </ul>
-            </dd>
-            <dt>2010年</dt>
-            <dd>
-              <p>UI/UXの専門部署に異動し、リクルートグループの人材、結婚、ECサイトなどのサイト設計、サービス設計を手がける。</p>
-            </dd>
-            <dt>2011年</dt>
-            <dd>個人事業としてニッカオフィスを設立。会社員とダブルワーク開始</dd>
-            <dt>2016年</dt>
-            <dd>リクルート退社</dd>
-            <dt>2017年</dt>
-            <dd>ニッカオフィスを法人化し独立</dd>
-          </dl>
-        </div>
+
+        <section class="about-detail__area">
+          <div class="about-detail">
+            <button class="js-slide-toggle-button js-toggle-label" data-slide-target="offer-plan" data-toggle-label-text="閉じる">専門分野を詳しく</button>
+          </div>
+          <div class="common-border-box-light-gray top-offer-plan__wrapper" data-slide-content="offer-plan">
+            <h2 class="common-heading2 about-detail__heading2">できること</h2>
+            <dl class="about-detail-list">
+              <dt class="about-detail-list__title"><span>デザイン</span></dt>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>UX</li>
+                  <li>UI</li>
+                  <li>サービスデザイン</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>ブランディング</li>
+                  <li>アートディレクション</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>新規立ち上げ</li>
+                  <li>既存リニュアル</li>
+                </ul>
+              </dd>
+              <dt class="about-detail-list__title"><span>戦略立案</span></dt>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>事業の問題特定</li>
+                  <li>企画</li>
+                  <li>ビジネス検討</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>経営と現場の接続</li>
+                </ul>
+              </dd>
+              <dt class="about-detail-list__title"><span>ユーザー理解</span></dt>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>ユーザーテスト</li>
+                  <li>顧客ヒアリング</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>現地調査</li>
+                  <li>サイトデータ分析</li>
+                </ul>
+              </dd>
+              <dt class="about-detail-list__title"><span>人材育成</span></dt>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>スキル定義</li>
+                  <li>UI</li>
+                  <li>講義</li>
+                </ul>
+              </dd>
+              <dt class="about-detail-list__title"><span>プロジェクトマネジメント</span></dt>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>スケジュール設計</li>
+                  <li>課題管理</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>会議体設計</li>
+                  <li>PMO</li>
+                </ul>
+              </dd>
+              <dt class="about-detail-list__title"><span>対象</span></dt>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>To B</li>
+                  <li>To C</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>ユーザーサイト</li>
+                  <li>業務アプリ</li>
+                </ul>
+              </dd>
+              <dd class="about-detail-list__item">
+                <ul>
+                  <li>PC</li>
+                  <li>スマートフォン</li>
+                  <li>タブレット</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="about-detail">
+            <button class="js-slide-toggle-button js-toggle-label" data-slide-target="profile-history" data-toggle-label-text="閉じる">経歴詳細</button>
+          </div>
+          <div class="common-border-box-light-gray chief-profile__history__wrapper global-narrow-box" data-slide-content="profile-history">
+            <h2 class="common-heading2 about-detail__heading2">経歴詳細</h2>
+            <dl class="chief-profile__history">
+              <dt>1981年</dt>
+              <dd>神奈川県横浜市生まれ</dd>
+              <dt>2001年</dt>
+              <dd>
+                <p>大学入学。建築学科にて建築、家具、インテリアを専攻。Charles & Ray Eamesのデザイン理論を研究。</p>
+              </dd>
+              <dt>2007年</dt>
+              <dd>
+                <ul>
+                  <li>東京理科大学大学院建築学専攻修了</li>
+                  <li>株式会社リクルート入社　不動産情報サイトSUUMOの新規立ち上げを担当</li>
+                </ul>
+              </dd>
+              <dt>2010年</dt>
+              <dd>
+                <p>UI/UXの専門部署に異動し、リクルートグループの人材、結婚、ECサイトなどのサイト設計、サービス設計を手がける。</p>
+              </dd>
+              <dt>2011年</dt>
+              <dd>個人事業としてニッカオフィスを設立。会社員とダブルワーク開始</dd>
+              <dt>2016年</dt>
+              <dd>リクルート退社</dd>
+              <dt>2017年</dt>
+              <dd>ニッカオフィスを法人化し独立</dd>
+            </dl>
+          </div>
+        </section>
+
         <h2 class="common-heading2 top-heading2">会社概要</h2>
         <div class="company-overview__wrapper">
           <dl class="company-overview">
@@ -195,8 +271,7 @@ get_template_part("article-summry");
             <dt>事業内容</dt>
             <dd>
               <ul>
-                <li>クリエイティブ、デザインに関するコンサルティング、制作</li>
-                <li>デザイン人材の育成</li>
+              <li>クリエイティブ及びデザインに関する制作、コンサルティング、人材育成</li>
               </ul>
             </dd>
           </dl>
@@ -219,18 +294,17 @@ get_template_part("article-summry");
           </dl>
         </div>
 
-      <div class="common-fluid-image">
-        <div class="common-fluid-image__parallax-wrapper">
-          <div class="common-fluid-image__parallax">
-            <div class="common-fluid-image__parallax-image"></div>
+        <div class="common-fluid-image">
+          <div class="common-fluid-image__parallax-wrapper">
+            <div class="common-fluid-image__parallax">
+              <div class="common-fluid-image__parallax-image"></div>
+            </div>
           </div>
         </div>
-      </div>
 
         <h3 class="common-heading2 top-heading2 top-heading2--logo-explanation">ロゴに込めた想い</h3>
         <div class="logo-explanation__wrapper">
-          <p class="logo-explanation"><img class="logo-explanation__image" src="/img/logo/knickaoffice_symbol.svg"
-              alt="ニッカオフィスロゴ"></p>
+          <p class="logo-explanation"><img class="logo-explanation__image" src="/img/logo/knickaoffice_symbol.svg" alt="ニッカオフィスロゴ"></p>
           <div class="logo-explanation__text">
             <p>ニッカオフィスのロゴは、「人」と「鍵穴」の形をモチーフにしています。</p>
             <p>人をよく観察し、ずっと開かなかったドアの鍵をパッと開けるように問題解決の糸口を見つける。ニッカオフィスはそんなクリエイティブスタジオでありたいと思っています。</p>
@@ -238,9 +312,9 @@ get_template_part("article-summry");
         </div>
       </div>
     </main>
-<?php
-get_footer();
-?>
+    <?php
+    get_footer();
+    ?>
   </div>
   <script src="/js/top/script.js"></script>
 </body>
