@@ -51,13 +51,13 @@
       </div>
       <ul class="sns-button">
         <li class="sns-button__item">
-          <a><img src="/img/twitter.svg" alt="Twitter"></a>
+          <a href="https://twitter.com/knickaoffice"><img src="/img/twitter.svg" alt="Twitter"></a>
         </li>
         <li class="sns-button__item">
-          <a><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
+          <a href="fb://profile/194345830616701"><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
         </li>
         <li class="sns-button__item">
-          <a><img src="/img/line.svg" alt="LINE@"></a>
+          <a href="https://line.me/R/ti/p/@cwr6960h"><img src="/img/line.svg" alt="LINE@"></a>
         </li>
       </ul>
 
@@ -71,15 +71,31 @@
 
       <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT">Client / 実績</h2>
       <ul class="client-list">
-        <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://corp.en-japan.com/" target="_blank" class="client-list__link"><img src="/img/client-logo/enjapan.png" alt="エン・ジャパン株式会社" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://www.kayac.com/" target="_blank" class="client-list__link"><img src="/img/client-logo/kayac.png" alt="面白法人カヤック" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://www.cbase.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/CBASE.png" alt="株式会社シーベース" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://www.staffservice.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/STAFFSERVICEGROUP.png" alt="株式会社スタッフサービス・ホールディングス" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://zeku.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/ZEKU.png" alt="株式会社ゼクウ" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://corp.chatwork.com/ja/" target="_blank" class="client-list__link"><img src="/img/client-logo/Chatwork.png" alt="Chatwork株式会社" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://visits.world/" target="_blank" class="client-list__link"><img src="/img/client-logo/VISITS.png" alt="VISITS Technologies株式会社" class="client-list__image"></a></li>
-        <li class="client-list__item"><a href="https://recruit-holdings.co.jp/" target="_blank" class="client-list__link"><img src="/img/client-logo/RECRUIT.png" alt="株式会社リクルートホールディングス" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img
+              src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://corp.en-japan.com/" target="_blank"
+            class="client-list__link"><img src="/img/client-logo/enjapan.png" alt="エン・ジャパン株式会社"
+              class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.kayac.com/" target="_blank" class="client-list__link"><img
+              src="/img/client-logo/kayac.png" alt="面白法人カヤック" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.cbase.co.jp/" target="_blank" class="client-list__link"><img
+              src="/img/client-logo/CBASE.png" alt="株式会社シーベース" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://www.staffservice.co.jp/" target="_blank"
+            class="client-list__link"><img src="/img/client-logo/STAFFSERVICEGROUP.png" alt="株式会社スタッフサービス・ホールディングス"
+              class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://zeku.co.jp/" target="_blank" class="client-list__link"><img
+              src="/img/client-logo/ZEKU.png" alt="株式会社ゼクウ" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://corp.chatwork.com/ja/" target="_blank"
+            class="client-list__link"><img src="/img/client-logo/Chatwork.png" alt="Chatwork株式会社"
+              class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://visits.world/" target="_blank" class="client-list__link"><img
+              src="/img/client-logo/VISITS.png" alt="VISITS Technologies株式会社" class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://recruit-holdings.co.jp/" target="_blank"
+            class="client-list__link"><img src="/img/client-logo/RECRUIT.png" alt="株式会社リクルートホールディングス"
+              class="client-list__image"></a></li>
+        <li class="client-list__item"><a href="https://litalico.co.jp/" target="_blank"
+            class="client-list__link"><img src="/img/client-logo/LITALICO.png" alt="株式会社LITALICO"
+              class="client-list__image"></a></li>
       </ul>
       <p class="common-notice-right">※五十音順、一部のみ掲載</p>
 
@@ -113,13 +129,13 @@
           </dl>
           <ul class="sns-button chief-profile__sns-button">
             <li class="sns-button__item">
-              <a><img src="/img/twitter.svg" alt="Twitter"></a>
+              <a href="https://twitter.com/knickaoffice"><img src="/img/twitter.svg" alt="Twitter"></a>
             </li>
             <li class="sns-button__item">
-              <a><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
+              <a href="fb://profile/194345830616701"><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
             </li>
             <li class="sns-button__item">
-              <a><img src="/img/line.svg" alt="LINE@"></a>
+              <a href="https://line.me/R/ti/p/@cwr6960h"><img src="/img/line.svg" alt="LINE@"></a>
             </li>
           </ul>
         </div>
