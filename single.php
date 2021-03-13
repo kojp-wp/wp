@@ -6,6 +6,8 @@ $page_title = get_the_title();
 $is_displayed = (get_the_date('Ymd') >= 20151101) ? true : false;
 $is_previous_post_displayed =
   (get_the_date('Ymd', $previous_post->ID) >= 20151101) ? true : false;
+
+$content = apply_filters('the_content', get_the_content());
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -37,7 +39,7 @@ $is_previous_post_displayed =
         <div class="blog-main__content">
           <h3 class="blog-main__content-right"><?php echo format_title($page_title, 'main'); ?></h3>
           <div class="blog-main__content-left">
-            <?php echo get_the_content(); ?>
+            <?php echo $content; ?>
           </div>
         </div>
       </div>
