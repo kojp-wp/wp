@@ -126,4 +126,31 @@ function custom_posts_column($column_name, $post_id)
 }
 add_filter('manage_posts_columns', 'add_posts_columns');
 add_action('manage_posts_custom_column', 'custom_posts_column', 10, 2);
+
+/* スラッグの入力に大文字を使用可能にする */
+remove_filter('sanitize_title', 'sanitize_title_with_dashes');
+add_filter('sanitize_title', 'ap_sanitize_title_with_dashes');
+function ap_sanitize_title_with_dashes($title)
+{
+    $title = strip_tags($title);
+    // Preserve escaped octets.
+    $title = preg_replace('|%([a-fA-F0-9][a-fA-F0-9])|', '---$1---', $title);
+    // Remove percent signs that are not part of an octet.
+    $title = str_replace('%', '', $title);
+    // Restore octets.
+    $title = preg_replace('|---([a-fA-F0-9][a-fA-F0-9])---|', '%$1', $title);
+    $title = remove_accents($title);
+    if (seems_utf8($title)) {
+        $title = utf8_uri_encode($title, 200);
+    }
+    $title = preg_replace('/&.+?;/', '', $title); // kill entities
+    $title = str_replace('.', '-', $title);
+    // Keep upper-case chars too!
+    $title = preg_replace('/[^%a-zA-Z0-9 _-]/', '', $title);
+    $title = preg_replace('/\s+/', '-', $title);
+    $title = preg_replace('|-+|', '-', $title);
+    $title = trim($title, '-');
+    return $title;
+}
+
 ?>
