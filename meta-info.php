@@ -20,5 +20,5 @@ if (is_home()) {
 <title><?php echo $site_title; ?></title>
 <meta name="description" content="<?php echo $site_description; ?>">
 <link rel="canonical" href="<?php echo $canonical_url; ?>">
-<link rel="icon" href="/img/favicon.ico">
+<link rel="shortcut icon" href="http://knickaoffice.jp/wp-content/uploads/2015/05/favicon.ico">
 <meta property="og:image" content="/img/logo/knickaoffice_symbol_ogp.png">
