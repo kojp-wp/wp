@@ -43,9 +43,11 @@ $content = apply_filters('the_content', get_the_content());
           </div>
         </div>
       </div>
-      <div class="blog-main__card">
+      <?php
+      /*<div class="blog-main__card">
         <img class="blog-main__card" src="/img/blog/blog-one-point.png" alt="blog-one-point">
-      </div>
+      </div>*/
+      ?>
     </article>
 
     <div class="blog-footer-nav">
