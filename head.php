@@ -40,3 +40,7 @@
   <?php if (is_page()) : ?>
   <link rel="stylesheet" href="/css/<?php echo $post->post_name; ?>/style.css">
   <?php endif; ?>
+  <link rel="shortcut icon" href="http://knickaoffice.jp/wp-content/uploads/2015/05/favicon.ico">
+  <?php wp_head();
+  $options = get_option('f8_theme_options');
+  ?>
