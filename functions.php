@@ -49,7 +49,7 @@ function format_thoughts_title($_YYmd)
     return $display_title;
 }
 
-function format_title( $_title, $_flag )
+function format_title($_title, $_flag)
 {
     $titles = explode('｜', $_title);
     $main    = $titles[0];
@@ -61,7 +61,7 @@ function format_title( $_title, $_flag )
     }
 }
 
-function which_thoughts_title( $_has_data, $_thoughts_title, $_title )
+function which_thoughts_title($_has_data, $_thoughts_title, $_title)
 {
     if ($_has_data) {
         return $_thoughts_title;
