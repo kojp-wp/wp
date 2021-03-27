@@ -16,7 +16,7 @@ if (count($recent_post) > 0) {
   <h1 class="quote-blog-wrapper__title">代表のエッセイ</h1>
   <article class="quate-blog-content">
     <h2 class="quate-blog-content__title">
-      <?php echo which_thoughts_title(post_custom('sub_title'), format_thoughts_title(post_custom('sub_title')), format_title($page_title, 'sub')); ?>
+      <?php echo which_thoughts_title(post_custom('sub_title'), format_thoughts_title(post_custom('sub_title')), format_title($recent_post_title, 'sub')); ?>
     </h2>
     <p class="quate-blog-content__sub-title">
       <?php echo format_title($recent_post_title, 'main') ?>
