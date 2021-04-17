@@ -22,7 +22,7 @@
               class="global-nav__item-sub">オフィスのこと</span></a>
         </li>
         <li class="global-nav__item global-nav__item-client">
-          <a href="<?php if (!is_home()) echo "/"?>#TOP_HEADING_CLIENT"><span class="global-nav__item-title">Client</span><span
+          <a href="<?php if (!is_home()) echo "/"?>#TOP_HEADING_CLIENT"><span class="global-nav__item-title">Clients</span><span
               class="global-nav__item-sub">実績</span></a>
         </li>
         <li class="global-nav__item">
