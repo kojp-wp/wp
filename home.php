@@ -51,7 +51,7 @@
       </div>
       <ul class="sns-button">
         <li class="sns-button__item">
-          <a href="https://twitter.com/knickaoffice"><img src="/img/twitter.svg" alt="Twitter"></a>
+          <a href="https://twitter.com/knickaoffice" target="_blank"><img src="/img/twitter.svg" alt="Twitter"></a>
         </li>
         <li class="sns-button__item">
           <a href="fb://profile/194345830616701"><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
@@ -129,7 +129,7 @@
           </dl>
           <ul class="sns-button chief-profile__sns-button">
             <li class="sns-button__item">
-              <a href="https://twitter.com/knickaoffice"><img src="/img/twitter.svg" alt="Twitter"></a>
+              <a href="https://twitter.com/knickaoffice" target="_blank"><img src="/img/twitter.svg" alt="Twitter"></a>
             </li>
             <li class="sns-button__item">
               <a href="fb://profile/194345830616701"><img src="/img/facebook-f.svg" alt="Facebookページ"></a>
