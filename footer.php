@@ -46,7 +46,7 @@
       <ul class="global-footer__link">
         <li class="global-footer__links"><a href="/">ホーム</a></li>
         <li class="global-footer__links"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_ABOUT">オフィスのこと</a></li>
-        <li class="global-footer__links"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_CLIENT">顧客</a></li>
+        <li class="global-footer__links"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_CLIENT">実績</a></li>
         <li class="global-footer__links"><a href="<?php
                                                   $recent_post = get_posts('numberposts=1');
                                                   if (count($recent_post) > 0) {
