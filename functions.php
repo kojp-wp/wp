@@ -153,4 +153,17 @@ function ap_sanitize_title_with_dashes($title)
     return $title;
 }
 
+function convert_content($content)
+{
+    $convert_content = mb_convert_kana($content, 'AS', 'UTF-8');
+    return $convert_content;
+}
+function convert_title($title)
+{
+    $convert_title = mb_convert_kana($title, 'AS', 'UTF-8');
+    return $convert_title;
+}
+add_filter('the_content', 'convert_content');
+add_filter('the_title', 'convert_title');
+
 ?>
