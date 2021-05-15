@@ -1,7 +1,6 @@
 <?php
 $knicka_site_name = "ニッカオフィス / knicka office";
-$knicka_site_description = "横浜の商店街で活動しているクリエイティブスタジオ";
-
+$knicka_site_description = "ぜんぶ、使いやすくしよう。ウェブ、アプリ、プロダクト、サービスをデザインするクリエイティブスタジオ。デザインチームの立ち上げ、育成、クリティカルシンキング、問題解決思考によりビジネスとデザインを繋ぎます。";
 if (is_home()) {
   $site_title = $knicka_site_name;
   $site_description = $knicka_site_description;
@@ -21,6 +20,9 @@ if (is_home()) {
 <meta name="description" content="<?php echo $site_description; ?>">
 <link rel="canonical" href="<?php echo $canonical_url; ?>">
 <link rel="shortcut icon" href="http://knickaoffice.jp/wp-content/uploads/2015/05/favicon.ico">
-<meta name="og:image" content="/img/logo/knickaoffice_symbol_ogp.png" />
-<meta property="og:image" content="/img/logo/knickaoffice_symbol_ogp.png">
-<meta name="twitter:image" content="/img/logo/knickaoffice_symbol_ogp.png" />
+<meta property="og:image" content="http://knickaoffice.jp/img/logo/knickaoffice_symbol_ogp.png">
+<meta name="og:image" content="http://knickaoffice.jp/img/logo/knickaoffice_symbol_ogp.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="http://knickaoffice.jp/img/logo/knickaoffice_symbol_ogp.png" />
+<meta name="twitter:site" content="@knickaoffice" />
+<meta name="twitter:player" content="@knickaoffice" />
