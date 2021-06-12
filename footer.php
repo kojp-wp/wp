@@ -7,29 +7,29 @@
         <ul>
           <li class="producer__name-wrapper">
             <a href="/#TOP_HEADING_OWNER-PROFILE" class="producer__link">
-            <div class="producer__kenichi">
-              <p>内山 賢一</p>
-              <p class="producer__kenichi-en">Kenichi UCHIYAMA</p>
-            </div>
-            <span><img src="/img/internal-link.svg" alt="Kenichi UCHIYAMA_link"></span>
+              <div class="producer__kenichi">
+                <p>内山 賢一</p>
+                <p class="producer__kenichi-en">Kenichi UCHIYAMA</p>
+              </div>
+              <span><img src="/img/internal-link.svg" alt="Kenichi UCHIYAMA_link"></span>
             </a>
           </li>
           <li class="producer__name-wrapper">
             <a href="https://www.facebook.com/takuro.sato1212/" target="_blank" class="producer__link">
-            <div class="producer__takuro">
-              <p>佐藤 拓朗</p>
-              <p class="producer__takuro-en">Takuro SATO</p>
-            </div>
-            <span><img src="/img/link-icon.svg" alt="Takuro SATO_link"></span>
+              <div class="producer__takuro">
+                <p>佐藤 拓朗</p>
+                <p class="producer__takuro-en">Takuro SATO</p>
+              </div>
+              <span><img src="/img/link-icon.svg" alt="Takuro SATO_link"></span>
             </a>
           </li>
           <li class="producer__name-wrapper">
             <a href="https://www.facebook.com/kaho.horimoto.9/" target="_blank" class="producer__link">
-            <div class="producer__kaho">
-              <p>堀本 佳歩</p>
-              <p class="producer__kaho-en">Kaho HORIMOTO</p>
-            </div>
-            <span><img src="/img/link-icon.svg" alt="Kaho HORIMOTO_link"></span>
+              <div class="producer__kaho">
+                <p>堀本 佳歩</p>
+                <p class="producer__kaho-en">Kaho HORIMOTO</p>
+              </div>
+              <span><img src="/img/link-icon.svg" alt="Kaho HORIMOTO_link"></span>
             </a>
           </li>
         </ul>
@@ -44,18 +44,18 @@
   <div class="global-footer__background">
     <div class="global-footer__wrap">
       <ul class="global-footer__link">
-        <li class="global-footer__links"><a href="/">ホーム</a></li>
-        <li class="global-footer__links"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_ABOUT">オフィスのこと</a></li>
-        <li class="global-footer__links"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_CLIENT">実績</a></li>
-        <li class="global-footer__links"><a href="<?php
-                                                  $recent_post = get_posts('numberposts=1');
-                                                  if (count($recent_post) > 0) {
-                                                    $recent_post_id = $recent_post[0]->ID;
-                                                    $recent_post_url = get_permalink($recent_post_id);
-                                                    echo $recent_post_url;
-                                                  } ?>">エッセイ</a></li>
-        <li class="global-footer__links"><a href="/faq/">よくある質問</a></li>
-        <li class="global-footer__links"><a href="/contact/">お問い合わせ</a></li>
+        <li class="global-footer__links global-footer__links--box3"><a href="/">ホーム</a></li>
+        <li class="global-footer__links global-footer__links--box2"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_ABOUT">オフィスのこと</a></li>
+        <li class="global-footer__links global-footer__links--box1"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_CLIENT">実績</a></li>
+        <li class="global-footer__links global-footer__links--box3"><a href="<?php
+                                                                              $recent_post = get_posts('numberposts=1');
+                                                                              if (count($recent_post) > 0) {
+                                                                                $recent_post_id = $recent_post[0]->ID;
+                                                                                $recent_post_url = get_permalink($recent_post_id);
+                                                                                echo $recent_post_url;
+                                                                              } ?>">エッセイ</a></li>
+        <li class="global-footer__links global-footer__links--box2"><a href="/faq/">よくある質問</a></li>
+        <li class="global-footer__links global-footer__links--box1"><a href="/contact/">お問い合わせ</a></li>
       </ul>
       <div class="global-footer__credit" id="credit__open">
         <p>このサイトの制作メンバー</p>
