@@ -6,7 +6,7 @@
           このサイトの製作者</p>
         <ul>
           <li class="producer__name-wrapper">
-            <a href="/#TOP_HEADING_OWNER-PROFILE" class="producer__link">
+            <a href="/#owner" class="producer__link">
               <div class="producer__kenichi">
                 <p>内山 賢一</p>
                 <p class="producer__kenichi-en">Kenichi UCHIYAMA</p>
@@ -45,8 +45,8 @@
     <div class="global-footer__wrap">
       <ul class="global-footer__link" id="container">
         <li class="global-footer__links" id="itemA"><a href="/">ホーム</a></li>
-        <li class="global-footer__links" id="itemB"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_ABOUT">オフィスのこと</a></li>
-        <li class="global-footer__links" id="itemC"><a href="<?php if (!is_home()) echo "/" ?>#TOP_HEADING_CLIENT">実績</a></li>
+        <li class="global-footer__links" id="itemB"><a href="<?php if (!is_home()) echo "/" ?>#about">オフィスのこと</a></li>
+        <li class="global-footer__links" id="itemC"><a href="<?php if (!is_home()) echo "/" ?>#clients">実績</a></li>
         <li class="global-footer__links" id="itemD"><a href="<?php
                                                               $recent_post = get_posts('numberposts=1');
                                                               if (count($recent_post) > 0) {

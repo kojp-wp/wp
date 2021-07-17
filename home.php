@@ -21,10 +21,10 @@
       <nav class="top-page-nav">
         <ul class="js-smoothTrigger top-page-nav__menu circle-nav-list">
           <li class="top-page-nav__item circle-nav-list__item">
-            <a href="#TOP_HEADING_ABOUT"><span>About</span><span>オフィスのこと</span></a>
+            <a href="#about"><span>About</span><span>オフィスのこと</span></a>
           </li>
           <li class="top-page-nav__item circle-nav-list__item">
-            <a href="#TOP_HEADING_CLIENT"><span>Clients</span><span>実績</span></a>
+            <a href="#clients"><span>Clients</span><span>実績</span></a>
           </li>
           <li class="top-page-nav__item circle-nav-list__item"><a href="<?php
           $recent_post = get_posts('numberposts=1');
@@ -45,7 +45,7 @@
       get_template_part("article-summry");
       ?>
       <div class="active-scroll-area">
-        <h2 class="common-heading2 top-heading2" id="TOP_HEADING_ABOUT" data-scroll-adjust-top-pc="0" data-scroll-adjust-top-sp="48">About / オフィスのこと</h2>
+        <h2 class="common-heading2 top-heading2" id="about" data-scroll-adjust-top-pc="0" data-scroll-adjust-top-sp="48">About / オフィスのこと</h2>
         <div class="global-narrow-box">
           <p>ニッカオフィスは、これまでに50案件以上のサービス立ち上げやリニュアルを行った代表のウチヤマケンイチの経験を元に、どんなプロダクトやサービスも使いやすくするクリエイティブスタジオです。</p>
         </div>
@@ -72,7 +72,7 @@
       </div>
 
       <div class="active-scroll-area">
-        <h2 class="common-heading2 top-heading2" id="TOP_HEADING_CLIENT" data-scroll-adjust-top-pc="0" data-scroll-adjust-top-sp="10">Clients / 実績</h2>
+        <h2 class="common-heading2 top-heading2" id="clients" data-scroll-adjust-top-pc="0" data-scroll-adjust-top-sp="10">Clients / 実績</h2>
         <ul class="client-list">
           <li class="client-list__item"><a href="https://www.hr-s.co.jp/" target="_blank" class="client-list__link"><img
                 src="/img/client-logo/HRsolutions.png" alt="HRソリューションズ株式会社" class="client-list__image"></a></li>
@@ -103,7 +103,7 @@
         <p class="common-notice-right">※五十音順、一部のみ掲載</p>
       </div>
 
-      <h2 class="common-heading2 top-heading2" id="TOP_HEADING_OWNER-PROFILE">プロフィール</h2>
+      <h2 class="common-heading2 top-heading2" id="owner">代表プロフィール</h2>
       <div class="chief-profile">
         <figure class="common-wide-image common-wide-image--high chief-profile__chief-photo">
           <img src="/img/image-chief-profile.png" alt="ウチヤマケンイチ プロフィール写真">
@@ -143,7 +143,7 @@
             <button class="js-slide-toggle-button js-toggle-label" data-slide-target="offer-plan" data-toggle-label-text="閉じる">専門分野を詳しく</button>
           </div>
           <div class="common-border-box-light-gray top-offer-plan__wrapper" data-slide-content="offer-plan">
-            <h2 class="common-heading2 about-detail__heading2">できること</h2>
+            <h2 class="common-heading2 about-detail__heading2" id="owner_expertise">できること</h2>
             <dl class="about-detail-list">
               <dt class="about-detail-list__title"><span>デザイン</span></dt>
               <dd class="about-detail-list__item">
@@ -238,7 +238,7 @@
             <button class="js-slide-toggle-button js-toggle-label" data-slide-target="profile-history" data-toggle-label-text="閉じる">経歴詳細</button>
           </div>
           <div class="common-border-box-light-gray chief-profile__history__wrapper global-narrow-box" data-slide-content="profile-history">
-            <h2 class="common-heading2 about-detail__heading2">経歴詳細</h2>
+            <h2 class="common-heading2 about-detail__heading2" id="owner_career">経歴詳細</h2>
             <dl class="chief-profile__history">
               <dt>1981年</dt>
               <dd>神奈川県横浜市生まれ</dd>
@@ -267,7 +267,7 @@
           </div>
         </section>
 
-        <h2 class="common-heading2 top-heading2">会社概要</h2>
+        <h2 class="common-heading2 top-heading2" id="company">会社概要</h2>
         <div class="company-overview__wrapper">
           <dl class="company-overview">
             <dt>法人名</dt>
