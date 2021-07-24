@@ -24,16 +24,6 @@ $content = apply_filters('the_content', get_the_content());
   ?>
   <main class="main-content-wrapper">
     <article class="blog-main">
-      <div class="blog-header-nav">
-        <a href="<?php echo get_permalink($previous_post->ID); ?>" class="blog-header-nav__day-before">
-          <span>前日</span>
-        </a>
-        <?php if (!empty($next_post)) : ?>
-          <a href="<?php echo get_permalink($next_post->ID); ?>" class="blog-header-nav__day-after">
-            <span>翌日</span>
-          </a>
-        <?php endif; ?>
-      </div>
       <h2><?php echo which_thoughts_title(post_custom('sub_title'), format_thoughts_title(post_custom('sub_title')), format_title($page_title, 'sub')); ?></h2>
       <div class="blog-main__content-height">
         <div class="blog-main__content">
