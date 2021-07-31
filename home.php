@@ -238,7 +238,7 @@
             <button class="js-slide-toggle-button js-toggle-label" data-slide-target="profile-history" data-toggle-label-text="閉じる">経歴詳細</button>
           </div>
           <div class="common-border-box-light-gray chief-profile__history__wrapper global-narrow-box" data-slide-content="profile-history">
-            <h2 class="common-heading2 about-detail__heading2 hidden-heading" id="chief_career">経歴詳細</h2>
+            <h2 class="common-heading2 about-detail__heading2 hidden-heading" id="chief_biography">経歴詳細</h2>
             <dl class="chief-profile__history">
               <dt>1981年</dt>
               <dd>神奈川県横浜市生まれ</dd>
